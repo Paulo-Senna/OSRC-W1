@@ -5,3 +5,6 @@ build/
 xcm_test.mjs
 test-counter.mjs
 xcm-call-receiver.mjs
+*.part
+*.log
+runtimes/asset-hub-paseo_runtime.compressed.wasm

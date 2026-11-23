@@ -1,0 +1,9 @@
+# <path>  <sha256>  <url | repo>
+bin/polkadot                 8f0b466d84206097ff49c4d675d971ef457ba7c41d480f048098a41e7cc304fb  https://github.com/paritytech/polkadot-sdk/releases/download/polkadot-stable2609/polkadot
+bin/polkadot-prepare-worker  385dc434a42611e01db36735fa993c219c96e285ab1d47a9c21ff85aae7af731  https://github.com/paritytech/polkadot-sdk/releases/download/polkadot-stable2609/polkadot-prepare-worker
+bin/polkadot-execute-worker  1e2eaf7984315937a9fcdb91f1ce0bdf04c5c796fa170a9f75369141ca710721  https://github.com/paritytech/polkadot-sdk/releases/download/polkadot-stable2609/polkadot-execute-worker
+bin/polkadot-omni-node       441c40b5b3d4769d2fb4e447b5a863a07f7ee1cc5120129ff76d4994c15b32e7  https://github.com/paritytech/polkadot-sdk/releases/download/polkadot-stable2609/polkadot-omni-node
+bin/chain-spec-builder       4594370114e444ea0fe9776baee55345b904b90aefea1485f38cb21fcb3d8f45  https://github.com/paritytech/polkadot-sdk/releases/download/polkadot-stable2609/chain-spec-builder
+bin/zombienet                f3debaff09782302cb2bc34e1473e71a8830848476147a9f3d9f72f85b5c3e96  https://github.com/paritytech/zombienet/releases/download/v1.3.140/zombienet-linux-x64
+runtimes/asset-hub-paseo_runtime.compressed.wasm  01091bf84e7f95d5e2ac00a892c92efe5116b49767b56d3e2e84d5160bd8e803  https://github.com/paseo-network/runtimes/releases/download/v2.5.5/asset-hub-paseo_runtime.compressed.wasm
+runtimes/paseo_runtime.compact.compressed.wasm    e6ee51e8a81b75e6157b2f16fe2f932970056243da923a918ce98188e2585dad  repo
