@@ -53,6 +53,14 @@ $CHECK && { echo "==> OK"; exit 0; }
 echo "==> Node dependencies"
 (cd scripts && npm ci --no-audit --no-fund --silent)
 ok "scripts/node_modules"
+(cd contracts && npm ci --no-audit --no-fund --silent)
+ok "contracts/node_modules"
+
+echo "==> Contracts"
+for c in Sender Receiver; do
+  (cd contracts && npx resolc "src/$c.sol" --bin --abi -o build >/dev/null)
+  ok "contracts/build/src_${c}_sol_${c}.polkavm"
+done
 
 if $SPECS; then
   echo "==> Chain specs"
