@@ -1,2 +1,7 @@
 node_modules/
 bin/
+build/
+
+xcm_test.mjs
+test-counter.mjs
+xcm-call-receiver.mjs
