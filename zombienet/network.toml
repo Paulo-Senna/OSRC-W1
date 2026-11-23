@@ -1,0 +1,39 @@
+[settings]
+timeout = 1000
+provider = "native"
+
+[relaychain]
+chain_spec_path = "./specs/paseo-local.json"
+default_command = "./bin/polkadot"
+
+[[relaychain.nodes]]
+name = "alice"
+validator = true
+rpc_port = 9944
+args = ["-lparachain::collator-protocol=debug,sub-authority-discovery=debug,parachain::network-bridge-tx=debug"]
+
+[[relaychain.nodes]]
+name = "bob"
+validator = true
+rpc_port = 9945
+args = ["-lparachain::collator-protocol=debug,sub-authority-discovery=debug,parachain::network-bridge-tx=debug"]
+
+[[parachains]]
+id = 2000
+chain_spec_path = "./specs/para-a.json"
+
+  [[parachains.collators]]
+  name = "collator-a"
+  command = "./bin/polkadot-omni-node"
+  rpc_port = 9988
+  args = ["-lparachain::collator-protocol=debug,sub-authority-discovery=debug,parachain::network-bridge-tx=debug"]
+
+[[parachains]]
+id = 2001
+chain_spec_path = "./specs/para-b.json"
+
+  [[parachains.collators]]
+  name = "collator-b"
+  command = "./bin/polkadot-omni-node"
+  rpc_port = 9989
+  args = ["-lparachain::collator-protocol=debug,sub-authority-discovery=debug,parachain::network-bridge-tx=debug"]
