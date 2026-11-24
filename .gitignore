@@ -9,3 +9,4 @@ xcm-call-receiver.mjs
 *.log
 runtimes/asset-hub-paseo_runtime.compressed.wasm
 contracts/deployments.json
+.venv/
